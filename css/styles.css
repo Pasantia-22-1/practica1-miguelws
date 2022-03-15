@@ -1,2 +1,95 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
 
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    background-color: #555;
+    position: sticky;
+    top: 0;
+}
+/*begin: menu*/
+.nav__content{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav__content a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+}
+.nav__content a:hover{
+    background-color: black;
+    color: white;
+}
+.nav__content a img{
+    width: 20%;
+}
+/*end: menu*/
+/*begin: submenu*/
+.nav__content__sub__item{
+    position: absolute;
+    background-color: #555;
+    color: white;
+    display: none;
+}
+.nav__content .nav__content__sub:hover .nav__content__sub__item{
+    display: block;
+}
+/*end: submenu*/
+/*begin: main content*/
+.main{
+    padding: 50px 90px;
+}
+.main__gallery{
+    display:flex;
+    justify-content: space-around;
+}
+.main__gallery img{
+    float: left;
+    width: 15%;
+}
+.main__title{
+    padding: 15px;
+}
+.main__info{
+    padding: 10px 20px;
+    text-align: justify;
+}
+.main__info__img1{
+    padding: 5px 5px;
+    float: right;
+    width: 40%
+}
+.main__info__img2{
+    padding: 5px 5px;
+    float: left;
+    width: 30%
+}
+/*end: main content*/
+/*begin: footer*/
+.footer{
+    margin-top: auto;
+    width: 100%;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialmedia{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.socialmedia li a img{
+    border-radius: 50%;
+    padding: 15px;
+    width: 40%;
+}
+/*end: footer*/
